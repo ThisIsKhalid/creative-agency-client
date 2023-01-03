@@ -1,5 +1,6 @@
 import React from "react";
 import Branding from "./Branding/Branding";
+import OurWorks from "./OurWorks/OurWorks";
 import Services from "./Services/Services";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <>
       <Branding />
       <Services/>
+      <OurWorks/>
     </>
   );
 };
