@@ -3,7 +3,7 @@ import React from 'react';
 
 const BrandingWrapper = styled(Box)(({ theme }) => ({
   padding: theme.spacing(5),
-  margin: "2rem 0",
+  // margin: "2rem 0",
   backgroundColor: "rgba(122, 178, 89, 0.15)",
   [theme.breakpoints.up("md")]: {
     height: "80vh",

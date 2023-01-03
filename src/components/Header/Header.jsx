@@ -66,9 +66,15 @@ export default function Header(props) {
       <AppBar
         component="nav"
         sx={{
-          backgroundColor: "transparent",
+          backgroundColor: {
+            xs: "rgba(122, 178, 89, 0.15)",
+            lg: "transparent",
+          },
           boxShadow: "none",
-          mt: 2,
+          py: {
+            xs: 0,
+            sm: 1
+          },
           position: "static",
         }}
       >
@@ -82,7 +88,7 @@ export default function Header(props) {
               sx={{
                 mr: 2,
                 display: { sm: "none" },
-                backgroundColor: "primary.main",
+                backgroundColor: "primary.green",
                 "&:hover": {
                   backgroundColor: "primary.main",
                 },
@@ -90,7 +96,7 @@ export default function Header(props) {
             >
               <MenuIcon />
             </IconButton>
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "block" } }}>
+            <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
               <img
                 src="https://i.ibb.co/JsvBDwD/logo.png"
                 alt=""
