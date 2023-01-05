@@ -1,9 +1,11 @@
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { Box, IconButton } from "@mui/material";
+import { Box, Grid, IconButton } from "@mui/material";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import React from "react";
+import CreativeCard from "../../../components/CreativeCard/CreativeCard";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
+import {cardData} from './CardData'
 
 const OurWorks = () => {
   const [value, setValue] = React.useState(0);
@@ -106,13 +108,13 @@ const OurWorks = () => {
 
       {/*  card section */}
 
-      {/* <Grid container spacing={3} justifyContent="center">
+      <Grid container spacing={3} justifyContent="center">
         {cardData[value].map((image) => (
           <Grid item>
             <CreativeCard image={image} />
           </Grid>
         ))}
-      </Grid> */}
+      </Grid>
     </Box>
   );
 };
